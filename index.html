@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SimpleChat</title>
+    <meta name="description" content="Enter now on Simple Chat Beta! An awesome chat made using  javascript and firebase">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+</head>
+<body>
+
+    <section id="username-box" onload>
+        <h1>DIGITE SEU USERNAME</h1>
+        <input type="text"autocomplete="none" >
+        <button>ENTRAR NO CHAT</button>
+        <p></p>
+    </section>
+
+    <main class="hide">
+    <section id="view">
+            <ul>
+            </ul>
+        </section>
+        <section id="send-box">
+            <input type="text" id="msg">
+            <button>ENVIAR</button>
+        </section>
+    </main>
+
+    <script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-database.js"></script>
+    <script src="./firebase.js"></script>
+    <script src="./scripts.js"></script>
+</body>
+</html>
