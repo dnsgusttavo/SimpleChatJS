@@ -68,3 +68,15 @@ function scrollChatToBottom(){
     const ul = document.querySelector('#view')
     ul.scrollTo(0,ul.scrollHeight)
 }
+
+
+// function botMsg(){
+
+//     setInterval(() => {
+//         const bots = ["Albert","Allen","Bert","Bob","Cecil","Clarence","Elliot","Elmer","Ernie","Eugene","Fergus","Ferris","Frank","Fred","George","Graham","Harvey","Irwin","Larry","Lester","Marvin","Neil","Niles","Oliver","Opie","Ryan","Toby","Ulric","Ulysses","Uri","Waldo","Wally","Walt","Wesley","Yanni","Yogi","Yuri"]
+//         const frases = ["Design não é apenas o que parece e o que se sente. Design é como funciona.","Inovação distingue um líder de um seguidor.","Eu quero colocar uma marca no universo.","Às vezes, a vida bate com um tijolo na sua cabeça. Não perca a fé.","É melhor ser pirata do que entrar na Marinha.","Seja criterioso com a qualidade. Algumas pessoas não estão acostumadas com um ambiente onde a excelência é esperada.","As coisas não precisam mudar o mundo para serem importantes.","Tenho tanto orgulho do que nós não fazemos quanto tenho do que fazemos.","Eu trocaria toda a minha tecnologia por uma tarde com Sócrates.","É raro ver um artista nos seus 30 ou 40 anos capaz de contribuir com algo incrível."]
+//         const key = firebase.database().ref("chat").push().key;
+//         firebase.database().ref("chat").child(key).set({author: bots[Math.floor(Math.random() * bots.length)],msg: frases[Math.floor(Math.random() * frases.length)]});
+//     }, 2000);
+    
+// }
